@@ -11,16 +11,16 @@
         let todo1 = 'get groceries';
         let todo2 = 'wash car';
         let todo3 = 'make dinner';
-        
-        function addTodo(todoTitle) {
+        let todo4 = 'do laundry';
+
+        let todos = [todo1, todo2, todo3, todo4]
+        todos.push('another todo');
+
+        todos.forEach(function (todoTitle) {
             let element = document.createElement('div');
         element.innerText = todoTitle;
         document.body.appendChild(element);
-        }
-
-        addTodo(todo1);
-        addTodo(todo2);
-        addTodo(todo3);
+        });
     </script>
 </body>
 </html>
