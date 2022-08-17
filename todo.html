@@ -7,18 +7,20 @@
     <title>My Todo App</title>
 </head>
 <body>
-    <button>Press Me</button>
-    <div>Get groceries</div>
-    <div>wash car</div>
-    <div>make dinner</div>
     <script>
         let todo1 = 'get groceries';
         let todo2 = 'wash car';
         let todo3 = 'make dinner';
         
-        let element = document.createElement('div');
-        element.innerText = todo1;
+        function addTodo(todoTitle) {
+            let element = document.createElement('div');
+        element.innerText = todoTitle;
         document.body.appendChild(element);
+        }
+
+        addTodo(todo1);
+        addTodo(todo2);
+        addTodo(todo3);
     </script>
 </body>
 </html>
